@@ -1,0 +1,324 @@
+5_vs_5_easy:
+  representation: "raw"
+  share_reward: True
+  # rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 100000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_interval: 5
+  eval_episodes: 40
+  n_eval_rollout_threads: 20 
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.25
+  gain: 0.01
+  gamma: 0.995
+  data_chunk_length: 10
+  entropy_coef: 0.001
+
+  # network
+  use_recurrent_policy: True
+  hidden_size: 128
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  # share_policy: False
+  # use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.125
+
+  reward_config:
+    goal_reward: 5.0
+    win_reward: 5.0
+    yellow_reward: 1.0
+    ball_position_reward: 1.0
+    ball_status_reward: 1.0
+    # ball_dist_to_goal: 0.001
+    # loss_penalty: 0.0
+    # ball_min_dist_reward: 0.003
+    # ball_position_reward2: 0.003
+
+5_vs_5_medium:
+  representation: "raw"
+  share_reward: True
+  # rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 100000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_interval: 5
+  eval_episodes: 20
+  n_eval_rollout_threads: 20 
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.25
+  gain: 0.01
+  gamma: 0.995
+  data_chunk_length: 10
+  entropy_coef: 0.001
+
+  # network
+  use_recurrent_policy: True
+  hidden_size: 128
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  # share_policy: False
+  # use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.125
+
+  reward_config:
+    goal_reward: 5.0
+    win_reward: 5.0
+    loss_penalty: 0.0
+    yellow_reward: 1.0
+    # ball_dist_to_goal: 0.001
+    ball_position_reward: 1.0
+    ball_status_reward: 1.0
+    # ball_min_dist_reward: 0.003
+    # ball_position_reward2: 0.003
+
+5_vs_5_hard:
+  representation: "raw"
+  share_reward: True
+  # rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 100000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_interval: 5
+  eval_episodes: 20
+  n_eval_rollout_threads: 20 
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.25
+  gain: 0.01
+  gamma: 0.995
+  data_chunk_length: 10
+  entropy_coef: 0.0001
+
+  # network
+  use_recurrent_policy: True
+  hidden_size: 128
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  # share_policy: False
+  # use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.125
+
+  reward_config:
+    goal_reward: 5.0
+    win_reward: 5.0
+    loss_penalty: 0.0
+    yellow_reward: 1.0
+    # ball_min_dist_reward: 0.003
+    ball_dist_to_goal: 0.001
+    ball_position_reward: 1.0
+    ball_status_reward: 1.0
+    # score: 5.0
+    # ball_position_reward2: 0.003
+
+academy_counterattack_easy:
+  representation: "raw"
+  share_reward: True
+  rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_episodes: 20
+  n_eval_rollout_threads: 20
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 10
+  entropy_coef: 0.01
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1
+
+academy_counterattack_hard:
+  representation: "raw"
+  share_reward: True
+  rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_episodes: 20
+  n_eval_rollout_threads: 20
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 10
+  entropy_coef: 0.01
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1
+
+academy_3_vs_1_with_keeper:
+  representation: "raw"
+  share_reward: True
+  rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_episodes: 20
+  n_eval_rollout_threads: 20
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 10
+  entropy_coef: 0.01
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1
+
+academy_pass_and_shoot_with_keeper:
+  representation: "simple115v2"
+  share_reward: True
+  rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_episodes: 20
+  n_eval_rollout_threads: 20
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 10
+  entropy_coef: 0.01
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1
+
+academy_run_pass_and_shoot_with_keeper:
+  representation: "simple115v2"
+  share_reward: True
+  rewards: "scoring,checkpoints"
+
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 5.0e-4
+  critic_lr: 5.0e-4
+  eval_episodes: 20
+  n_eval_rollout_threads: 20
+  use_proper_time_limits: True 
+  
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 10
+  entropy_coef: 0.01
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  use_centralized_V: False
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1

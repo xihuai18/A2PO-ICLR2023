@@ -1,11 +1,12 @@
 simple_spread:
   # training
   n_training_threads: 16
-  num_env_steps: 20000000
+  num_env_steps: 10000000
   episode_length: 25
   # lr: 7.0e-4
   # critic_lr: 7.0e-4
-  eval_episodes: 10
+  eval_interval: 10
+  eval_episodes: 20
   
   # algo-ppo
   # ppo_epoch: 10
@@ -16,16 +17,17 @@ simple_spread:
 
   # network
   use_ReLU: True
-  use_recurrent_policy: True
+  use_recurrent_policy: False
   stacked_frames: 1
   layer_after_N: 1
   layer_N: 2
 
   # seq
-  share_policy: False
-  use_cum_sequence: False
-  seq_strategy: "semi_greedy"
-  use_agent_block: False
+  share_policy: True
+  use_cum_sequence: True
+  # seq_strategy: "semi_greedy"
+  use_agent_block: True
+  # block_num: 2
 
   # others
   clip_others: True

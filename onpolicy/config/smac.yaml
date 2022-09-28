@@ -18,27 +18,6 @@
   use_cum_sequence: True
   block_num: 2
 
-# solved, very easy
-3m:
-  # training
-  n_training_threads: 16
-  num_env_steps: 5000000
-  # algo-ppo
-  num_mini_batch: 1
-  clip_param: 0.2
-  gain: 0.01
-  # network
-  use_recurrent_policy: True
-  stacked_frames: 1
-  layer_after_N: 1
-  layer_N: 2
-  share_policy: True
-  # Co-PPO / Sequential
-  others_clip_param: 0.1
-  use_cum_sequence: True
-  block_num: 2
-
-
 # win rate < 95%
 
 MMM2:
@@ -180,7 +159,7 @@ MMM:
 8m_vs_9m:
   # training
   n_training_threads: 16
-  num_env_steps: 6000000
+  num_env_steps: 10000000
   # algo-ppo
   num_mini_batch: 1
   clip_param: 0.05
