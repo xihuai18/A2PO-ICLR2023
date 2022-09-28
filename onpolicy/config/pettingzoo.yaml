@@ -1,0 +1,104 @@
+simple_spread:
+  env_args:
+    local_ratio: 0.5
+    max_cycles: 25
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 2.0e-4
+  critic_lr: 2.0e-4
+  eval_episodes: 10
+  n_eval_rollout_threads: 2
+  use_proper_time_limits: True 
+  
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 5
+  entropy_coef: 0.05
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1
+
+simple_reference:
+  env_args:
+    local_ratio: 0.0
+    max_cycles: 25
+  # training
+  num_agents: 2
+  n_training_threads: 16
+  num_env_steps: 10000000
+  lr: 1.0e-4
+  critic_lr: 1.0e-4
+  eval_episodes: 10
+  n_eval_rollout_threads: 2
+  use_proper_time_limits: True 
+  
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 5
+  entropy_coef: 0.05
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+
+  # seq
+  use_agent_block: False
+  share_policy: False
+  use_cum_sequence: False
+
+  # others
+  others_clip_param: 0.1
+
+multiwalker:
+  env_args:
+    shared_reward: True
+    max_cycles: 500
+  # training
+  n_training_threads: 16
+  num_env_steps: 15000000
+  # lr: 1.0e-4
+  # critic_lr: 1.0e-4
+  eval_episodes: 10
+  eval_interval: 25
+  use_proper_time_limits: True 
+  
+  # algo-ppo
+  num_mini_batch: 1
+  # clip_param: 0.2
+  gain: 0.01
+  # data_chunk_length: 10
+  entropy_coef: 0.0  # do not chagne
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -1.0
+
+  # seq
+
+  # others
+  # others_clip_param: 0.1
+  concat_obs_insteadof_state: True

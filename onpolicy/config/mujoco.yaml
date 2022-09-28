@@ -1,0 +1,190 @@
+Ant-v2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  critic_lr: !!float 3e-4
+  lr: !!float 3e-4
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  entropy_coef: 0.0
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  # use_agent_block: False
+
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+
+Walker2d-v2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  critic_lr: !!float 3e-4
+  lr: !!float 3e-4
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  entropy_coef: 0.0
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+
+HalfCheetah-v2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  critic_lr: !!float 3e-4
+  lr: !!float 3e-4
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  entropy_coef: 0.0
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+
+Hopper-v2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  critic_lr: !!float 1e-4
+  lr: !!float 1e-4
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.1
+  gain: 0.01
+  entropy_coef: 0.0
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+
+  # Co-PPO / Sequential
+  others_clip_param: 0.05
+
+
+Humanoid-v2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  critic_lr: !!float 3e-4
+  lr: !!float 3e-4
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  entropy_coef: 0.0
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+
+HumanoidStandup-v2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  critic_lr: !!float 3e-4
+  lr: !!float 3e-4
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  # clip_param: 0.2
+  gain: 0.01
+  entropy_coef: 0.0
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+
+  # Co-PPO / Sequential
+  # others_clip_param: 0.1

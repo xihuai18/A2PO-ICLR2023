@@ -1,0 +1,65 @@
+simple_spread:
+  # training
+  n_training_threads: 16
+  num_env_steps: 20000000
+  episode_length: 25
+  # lr: 7.0e-4
+  # critic_lr: 7.0e-4
+  eval_episodes: 10
+  
+  # algo-ppo
+  # ppo_epoch: 10
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 5
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  seq_strategy: "semi_greedy"
+  use_agent_block: False
+
+  # others
+  clip_others: True
+  others_clip_param: 0.1
+
+simple_reference:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  episode_length: 25
+  # lr: 7.0e-4
+  # critic_lr: 7.0e-4
+  eval_episodes: 10
+  
+  # algo-ppo
+  # ppo_epoch: 10
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  data_chunk_length: 5
+
+  # network
+  use_ReLU: True
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  seq_strategy: "semi_greedy"
+  use_agent_block: False
+
+  # others
+  clip_others: True
+  others_clip_param: 0.1

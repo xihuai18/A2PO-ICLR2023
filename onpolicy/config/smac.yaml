@@ -1,0 +1,275 @@
+# solved, very easy
+2s3z:
+  # training
+  n_training_threads: 16
+  num_env_steps: 5000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+# solved, very easy
+3m:
+  # training
+  n_training_threads: 16
+  num_env_steps: 5000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+
+# win rate < 95%
+
+MMM2:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  # tuned again and found out 1 is better than 2
+  num_mini_batch: 2
+  clip_param: 0.2
+  gain: 1
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+3s5z_vs_3s6z:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+27m_vs_30m:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  # clip_param: 0.1
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  # others_clip_param: 0.05
+  use_cum_sequence: True
+  block_num: 3
+
+5m_vs_6m:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.05
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.025
+  use_cum_sequence: True
+  block_num: 2
+
+6h_vs_8z:
+  # training
+  n_training_threads: 16
+  num_env_steps: 15000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: False
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+# win rate < 100%
+
+3s5z:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 3
+
+MMM:
+  # training
+  n_training_threads: 16
+  num_env_steps: 5000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 3
+
+8m_vs_9m:
+  # training
+  n_training_threads: 16
+  num_env_steps: 6000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.05
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.025
+  use_cum_sequence: True
+  block_num: 5
+
+10m_vs_11m:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+# slow training
+
+corridor:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: False
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
+
+3s_vs_5z:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.05
+  gain: 0.01
+  # network
+  use_recurrent_policy: False
+  stacked_frames: 4
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.025
+  use_cum_sequence: True
+  block_num: 3
+
+2c_vs_64zg:
+  # training
+  n_training_threads: 16
+  num_env_steps: 10000000
+  # algo-ppo
+  num_mini_batch: 1
+  clip_param: 0.2
+  gain: 0.01
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  share_policy: True
+  # Co-PPO / Sequential
+  others_clip_param: 0.1
+  use_cum_sequence: True
+  block_num: 2
