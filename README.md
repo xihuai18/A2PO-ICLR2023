@@ -18,8 +18,8 @@ Parameter sharing is recommended for SMAC, while separated parameters are recomm
 
 Monotonic Bounds
 
-<img src="./media/bound.png" height = "200" alt="bounds" align=center />
-<img src="./media/vis_bound.png" height = "200" alt="bounds" align=center />
+<img src="./media/bound.png" height = "300" alt="bounds" align=center />
+<img src="./media/vis_bound.png" height = "300" alt="bounds" align=center />
 
 Cooperative Break Through
 
