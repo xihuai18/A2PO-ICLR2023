@@ -14,7 +14,17 @@ Implemented algorithms include:
 
 Parameter sharing is recommended for SMAC, while separated parameters are recommended for other environments.
 
-## 2. Installation
+## 2. Results
+
+Cooperative Break Through
+
+![](./media/cooperative-break-through.gif)
+
+Serve, Pass and Shoot
+
+![](./media/serve-pass-and-shoot.gif)
+
+## 3. Installation
 
 ``` Bash
 # create conda environment
@@ -36,30 +46,30 @@ bash install.sh
 ```
 
 
-### 2.1 Install StarCraftII
+### 3.1 Install StarCraftII
 
 ```shell
 bash install_sc2.sh
 ```
 
-### 2.2 Install PettingZoo
+### 3.2 Install PettingZoo
 
 ```shell
 bash install_pettingzoo.sh
 ```
 
-### 2.3 Install Multi-agent Mujoco
+### 3.3 Install Multi-agent Mujoco
 
 ```shell
 bash install_mujoco.sh
 ```
 
-### 2.4 Install Google Search Football
+### 3.4 Install Google Search Football
 ```shell
 bash install_grf.sh
 ```
 
-## 3.Train
+## 4.Train
 Here we use training MMM2 (a hard task in SMAC) as an example:
 ```
 sh run_scripts/SMAC/MMM2.sh
