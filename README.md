@@ -2,8 +2,6 @@
 
 CTDE MARL algorithms for StarCraft II Multi-agent Challenge (SMAC), PettingZoo, Multi-agent Particle Environment, Multi-agent MUJOCO, and Google Research Football (comming later).
 
-Website: https://sites.google.com/view/a2po/agent-by-agent-policy-optimization
-
 This repo is heavily based on https://github.com/marlbenchmark/on-policy.
 
 Implemented algorithms include:
