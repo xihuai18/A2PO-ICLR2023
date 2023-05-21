@@ -1,3 +1,5 @@
+Codebase for [Order Matters: Agent-by-agent Policy Optimization](https://openreview.net/forum?id=Q-neeWNVv1). **Please note that this repo is currently undergoing reconstruction and may potentially contain bugs. As a result, its performance may not be consistent with that which was reported in the paper.**
+
 ## 1. Usage
 
 CTDE MARL algorithms for StarCraft II Multi-agent Challenge (SMAC), PettingZoo, Multi-agent Particle Environment, Multi-agent MUJOCO, and Google Research Football (comming later).
