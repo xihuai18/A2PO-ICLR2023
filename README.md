@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/xihuai18/A2PO-ICLR2023)
+
 Codebase for [Order Matters: Agent-by-agent Policy Optimization](https://openreview.net/forum?id=Q-neeWNVv1). **Please note that this repo is currently undergoing reconstruction and may potentially contain bugs. As a result, its performance may not be consistent with that which was reported in the paper.**
 
 ## 1. Usage
@@ -78,4 +80,5 @@ bash install_grf.sh
 Here we use training MMM2 (a hard task in SMAC) as an example:
 ```
 sh run_scripts/SMAC/MMM2.sh
+
 ```
